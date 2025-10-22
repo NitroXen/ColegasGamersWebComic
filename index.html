@@ -4,18 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colegas Gamers</title>
-    <style>
-      img {
-        width: 75%;
-      }
-      button {
-        padding: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <div>
+    <header class="header">
+      <div class="header__title">
         <svg
           data-icon-name="joystick"
           data-style="line"
@@ -24,13 +17,14 @@
           xmlns="http://www.w3.org/2000/svg"
           id="joystick"
           class="icon line"
-          width="48"
-          height="48"
+          width="50"
+          height="50"
         >
           <path
+            class="svg__path"
             style="
               fill: none;
-              stroke: rgb(0, 0, 0);
+              stroke: #000;
               stroke-linecap: round;
               stroke-linejoin: round;
               stroke-width: 1;
@@ -42,100 +36,86 @@
         <h2>Colegas Gamers</h2>
       </div>
 
-      <nav>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="#">Comics</a></li>
-        <li><a href="#">About</a></li>
-        <li>
-          <a href="#"
-            ><svg
-              data-icon-name="search"
-              data-style="line"
-              icon_origin_id="20598"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              id="search"
-              class="icon line"
-              width="48"
-              height="48"
-            >
-              <path
-                style="
-                  fill: none;
-                  stroke: rgb(0, 0, 0);
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-width: 1;
-                "
-                d="M17,10a7,7,0,1,1-7-7A7,7,0,0,1,17,10Zm4,11-6-6"
-                id="primary"
-              ></path>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#"
-            ><svg
-              data-icon-name="user-3"
-              data-style="line"
-              icon_origin_id="24293"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              id="user-3"
-              class="icon line"
-              width="48"
-              height="48"
-            >
-              <path
-                style="
-                  fill: none;
-                  stroke: rgb(0, 0, 0);
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-width: 1;
-                "
-                d="M17,8a5,5,0,1,1-5-5A5,5,0,0,1,17,8Zm1.44,7.6a1,1,0,0,0-1.34-.19,9,9,0,0,1-10.2,0,1,1,0,0,0-1.34.19A7,7,0,0,0,4,20a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1A7,7,0,0,0,18.44,15.6Z"
-                id="primary"
-              ></path>
-            </svg>
-          </a>
-        </li>
+      <nav class="header__nav">
+        <a href="./blog.html">Blog</a>
+        <a href="#">Comics</a>
+        <a href="#">About</a>
+
+        <a href="#"
+          ><svg
+            data-icon-name="search"
+            data-style="line"
+            icon_origin_id="20598"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="search"
+            class="icon line"
+            width="24"
+            height="24"
+          >
+            <path
+              style="
+                fill: none;
+                stroke: rgb(0, 0, 0);
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 1;
+              "
+              d="M17,10a7,7,0,1,1-7-7A7,7,0,0,1,17,10Zm4,11-6-6"
+              id="primary"
+            ></path>
+          </svg>
+        </a>
+
+        <a href="#"
+          ><svg
+            data-icon-name="user-3"
+            data-style="line"
+            icon_origin_id="24293"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="user-3"
+            class="icon line"
+            width="24"
+            height="24"
+          >
+            <path
+              style="
+                fill: none;
+                stroke: rgb(0, 0, 0);
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 1;
+              "
+              d="M17,8a5,5,0,1,1-5-5A5,5,0,0,1,17,8Zm1.44,7.6a1,1,0,0,0-1.34-.19,9,9,0,0,1-10.2,0,1,1,0,0,0-1.34.19A7,7,0,0,0,4,20a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1A7,7,0,0,0,18.44,15.6Z"
+              id="primary"
+            ></path>
+          </svg>
+        </a>
       </nav>
     </header>
-    <main>
-      <section>
-        <div>
-          <h2>Ultima Actualizacion: Capitulo 12</h2>
-          <img src="./assets/img/20210415_184256.jpg" alt="Capitulo 12" />
+    <main class="main">
+      <section class="main__section">
+        <div class="section__update">
+          <img
+            class="update__img"
+            src="./assets/img/test_comic.jpg"
+            alt="Capitulo 12"
+          />
+          <h2 class="update__text">Ultima Actualizacion: Capitulo 12</h2>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio
-          incidunt quos aperiam assumenda eligendi, aliquam debitis consectetur
-          et placeat neque nostrum rerum earum corporis dolore dolores.
-          Voluptates doloribus error est quia molestiae voluptas tenetur
-          architecto corrupti impedit labore! Nam quibusdam omnis modi optio
-          placeat excepturi aliquam adipisci facere delectus natus! Rerum quis
-          voluptate architecto inventore at ad, quaerat quam qui beatae
-          repellendus unde vitae similique sint! Harum magnam magni nemo ullam
-          sapiente doloremque, dicta et id repellendus iure soluta!
-          Exercitationem perspiciatis quis ducimus tempore laborum excepturi sit
-          ex velit inventore, aliquid voluptate aperiam provident quae
-          consectetur ad sed quam ipsa. Quam aliquid deserunt iste, nesciunt
-          consequuntur ab sequi quia saepe voluptatum cupiditate aut mollitia
-          corrupti laborum repellat consectetur, fuga iusto. Explicabo, dicta,
-          non sapiente facere doloremque et consectetur sed delectus maxime
-          ducimus iure dolore veritatis, repellendus ea. Impedit provident,
-          consectetur ducimus cupiditate alias ipsum velit corporis cum. Rerum
-          libero nisi odit amet esse. Eum nobis veritatis aperiam aliquam
-          molestiae deleniti ipsum voluptas obcaecati inventore corrupti?
-          Repudiandae nemo debitis in a aperiam explicabo minima numquam,
-          reiciendis placeat itaque, quae accusantium ad eius sequi sed maiores
-          deleniti ducimus quisquam? Labore voluptatum eligendi facilis unde
-          totam odit perferendis autem vero cum porro!
-        </p>
-        <div id="buttonGroup">
-          <button>Leer Capitulo</button>
-          <button>Ver archivo</button>
+        <div class="section__info">
+          <p class="info__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+            dolore corporis asperiores quos consequatur voluptas doloremque
+            possimus quisquam, fugiat eius quis iure temporibus sapiente,
+            explicabo ipsa magnam veritatis odio dolorum. Sequi recusandae
+            voluptatem enim amet!
+          </p>
+          <div class="info__buttons">
+            <button class="button button__read">Leer Capitulo</button>
+            <button class="button button__archive">Ver archivo</button>
+          </div>
         </div>
       </section>
     </main>
